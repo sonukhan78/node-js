@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 // const url = 'mongodb://127.0.0.1:27017';
 console.log("===>", process.env.MONGO_URL);
 const Connectdb = async () => {
+  console.log("============hellooo")
   try {
     const conn = await mongoose.connect(process.env.MONGO_URL);
   } catch (error) {
