@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 
-// const getproduct = async (req, res) => {
-//     let data = await user.find({});
-//     console.log("dda=datta======>", data);
-//     res.status(200).json({ message: data });
-//   };
+const getproduct = async (req, res) => {
+  let data = await user.find({});
+  console.log("dda=datta======>", data);
+  res.status(200).json({ message: data });
+};
 const {
   getproduct,
   postproduct,
